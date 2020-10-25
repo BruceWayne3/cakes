@@ -1,0 +1,108 @@
+*,*:before,*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    font-family: 'Snell Roundhand', cursive;
+    background-color: rgb(100, 21, 190);
+    color: white;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 30rem;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 600px;
+    background-color: bisque;
+}
+.slider-text {
+    font-size: 60px;
+    color: black;
+}
+.catalog {
+    margin-top: 50px;
+}
+.catalog__items {
+	display: grid;
+	column-gap: 30px;
+	row-gap: 50px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.catalog__item {
+	display: grid;
+	grid-auto-flow: row;
+    grid-template: auto 1fr minmax(40px, auto) / 1fr;
+    font-size: 25px;
+    background-color: cadetblue;
+    h3 {
+        margin: 5px 0px 5px 10px;
+    }
+}
+.catalog__image {
+	position: relative;
+	padding: 0px 0px 90% 0px;
+    margin: 0px 0px 20px 0px;
+}
+.catalog__image img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.catalog__description {
+    margin-left: 30px;
+}
+.catalog__buttons {
+    display: flex;
+    justify-content: center;
+}
+.catalog__button {
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    &:hover, &.active {
+        border: 1px solid;
+        color: black;
+        background-color: white;
+    }
+}
+.catalog__weight, .catalog__portions, .catalog__price {
+    margin: 0px 0px 5px 5px;
+}
+.footer {
+    min-height: 20rem;
+    margin-top: 50px;
+    background-color: violet;
+}
+.footer__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+}
+.footer__icons {
+    margin-top: 40px;
+    display: flex;
+}
+.footer__icon.instagram{
+    margin-right: 100px;
+}
